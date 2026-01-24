@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build (gcc15, C++23)",
+      "type": "shell",
+      "command": "docker run --rm -v \"${fileDirname}\":/work -w /work atcoder:gcc15 g++ -std=gnu++23 -O2 -Wall -Wextra -Wshadow -o main main.cpp",
+      "group": "build",
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "run (gcc15)",
+      "type": "shell",
+      "command": "docker run --rm -i -v \"${fileDirname}\":/work -w /work atcoder:gcc15 ./main",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "oj test (host, gcc15 bin)",
+      "type": "shell",
+      "command": "cd \"${fileDirname}\" && oj t -c 'docker run --rm -i -v \"$PWD\":/work -w /work atcoder:gcc15 ./main'",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}

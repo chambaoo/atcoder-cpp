@@ -30,22 +30,25 @@
 
 ```text
 ./
-  abc/                     # コンテスト種別
-    123/                   # コンテストID
-      a/
-        main.cpp
-        Makefile
-        test/              # 入出力ファイル置き場
-          sample_1.in
-          sample_1.out
-          my_1.in
-          my_1.out
-      b/
-        main.cpp
-        Makefile
-        test/
-          sample_1.in
-          sample_1.out
+  contest/                 # コンテスト用作業ディレクトリ
+    abc/                   # コンテスト種別
+      123/                 # コンテストID
+        a/
+          main.cpp
+          Makefile
+          test/            # 入出力ファイル置き場
+            sample_1.in
+            sample_1.out
+            my_1.in
+            my_1.out
+        b/
+          main.cpp
+          Makefile
+          test/
+            sample_1.in
+            sample_1.out
+  study/                   # 学習用作業ディレクトリ
+  training/                # AtCoder Daily Training 用作業ディレクトリ
   template/                # 問題用テンプレートディレクトリ
     q/
       main.cpp
@@ -59,14 +62,14 @@
 
 各問題ごとに、`template` 以下に用意したディレクトリを丸ごとコピーしてから作業する方針です。
 
-例: `abc/123/a` を作る場合
+例: `contest/abc/123/a` を作る場合
 
 ```bash
-mkdir -p abc/123
-cp -r template/q abc/123/a
+mkdir -p contest/abc/123
+cp -r template/q contest/abc/123/a
 ```
 
-コピー後、`abc/123/a/main.cpp` を編集し、必要であれば `Makefile` や `test/` 配下のファイルも調整してください。
+コピー後、`contest/abc/123/a/main.cpp` を編集し、必要であれば `Makefile` や `test/` 配下のファイルも調整してください。
 
 そのディレクトリ内での基本的な使い方:
 

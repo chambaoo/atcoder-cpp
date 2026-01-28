@@ -1,0 +1,1 @@
+docker run --rm -v "/workspaces/atcoder-cpp/study/abc/442/a":/work -w /work atcoder:gcc15 g++ -std=gnu++23 -O2 -Wall -Wextra -Wshadow -o main main.cpp

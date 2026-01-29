@@ -10,7 +10,7 @@ run: all
 	docker run --rm -i -v "$(PWD)":/work -w /work atcoder:gcc15 ./main
 
 test: all
-	oj t -c 'docker run --rm -i -v "$(PWD)":/work -w /work atcoder:gcc15 ./main'
+	docker run --rm -it -v "$(PWD)":/work -w /work atcoder:gcc15 oj t -c ./main
 
 # make newtest 3     -> sample_3.in/out
 # make newtest 1 4   -> sample_1〜sample_4.in/out

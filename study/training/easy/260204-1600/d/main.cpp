@@ -2,19 +2,13 @@
 using namespace std;
 
 int main() {
-    string s;
-    cin >> s;
-    int N = s.size();
-    set<string> st;
-    for (int i = 0; i < N; i++)
-    {
-        for (int j = 1; j <= N - i; j++)
-        {
-            st.insert(s.substr(i, j));
-        }
+    string S;
+    cin >> S;
+    
+    set<string> se;
+    for (int i = 0; i < S.size(); ++i) {
+        for (int j = i+1; j <= S.size(); ++j) {
+            se.insert(S.substr(i, j-i));}
     }
-    cout << st.size() << endl;
-
-
-    return 0;
+    cout << se.size() << endl;
 }

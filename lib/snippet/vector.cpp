@@ -22,3 +22,10 @@ int main() {
 
     return 0;
 }
+
+int wrong_1() {
+    vector<int> vec(5);
+    vec.push_back(99);
+    // 99 ではなく 0 が入っている
+    // cout << vec.at(0) << endl;
+}

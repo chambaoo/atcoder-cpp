@@ -12,15 +12,15 @@ run: all
 test: all
 	docker run --rm -it -v "$(PWD)":/work -w /work atcoder:gcc15 oj t -c ./main
 
-# make newtest 3     -> sample_3.in/out
-# make newtest 1 4   -> sample_1〜sample_4.in/out
-ARGS := $(filter-out newtest,$(MAKECMDGOALS))
+# make nt 3     -> sample_3.in/out
+# make nt 1 4   -> sample_1〜sample_4.in/out
+ARGS := $(filter-out nt,$(MAKECMDGOALS))
 
-newtest:
+nt:
 	@set -e; \
 	if [ "$(ARGS)" = "" ]; then \
-	  echo "Usage: make newtest 3   # 3 だけ"; \
-	  echo "       make newtest 1 4 # 1〜4 まで"; \
+	  echo "Usage: make nt 3   # 3 だけ"; \
+	  echo "       make nt 1 4 # 1〜4 まで"; \
 	  exit 1; \
 	fi; \
 	set -- $(ARGS); \
@@ -29,8 +29,8 @@ newtest:
 	elif [ "$$#" -eq 2 ]; then \
 	  s="$$1"; e="$$2"; \
 	else \
-	  echo "Usage: make newtest 3   # 3 だけ"; \
-	  echo "       make newtest 1 4 # 1〜4 まで"; \
+	  echo "Usage: make nt 3   # 3 だけ"; \
+	  echo "       make nt 1 4 # 1〜4 まで"; \
 	  exit 1; \
 	fi; \
 	if [ "$$s" -gt "$$e" ]; then \

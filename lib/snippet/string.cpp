@@ -14,6 +14,11 @@ int main() {
     // 文字列に文字を追加
     str.append("s");
 
+    for (char c : str) {
+        // 1文字ずつ取り出す
+        // cout << c << endl;
+    }
+
 
     return 0;
 }
@@ -31,3 +36,4 @@ int main() {
     }
 
 }
+

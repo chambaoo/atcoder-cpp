@@ -34,6 +34,9 @@ int main() {
         {26, 'z'},
     };
 
+    // 後から map に要素を追加する
+    dict.insert(std::make_pair(27, 'A'));
+
     for (int v : p) {
         char c = dict.at(v);
         // cout << c;

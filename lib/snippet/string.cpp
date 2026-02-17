@@ -19,6 +19,15 @@ int main() {
         // cout << c << endl;
     }
 
+    // 開始地点をずらしながら、全パターンチェック
+    for (int i = 0; i < length; i++) {
+        // i 番目 ～ 最後(length - 1)までの文字列を切り出す
+        string head = str.substr(i);
+        // 0 番目 ～ i 文字 の文字列を切り出す
+        string tail = str.substr(0, i);
+        // list.push_back(head + tail);
+    }
+
 
     return 0;
 }

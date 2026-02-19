@@ -25,6 +25,10 @@ int main() {
     // 降順にソート
     sort(vec.begin(), vec.end(), greater<>());
 
+    // p = {0, 1, 2, 3, 4} を作る
+    vector<int> p(5);
+    iota(p.begin(), p.end(), 0);
+
     return 0;
 }
 

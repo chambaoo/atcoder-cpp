@@ -1,4 +1,4 @@
-#include<vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -19,6 +19,11 @@ int main() {
     vec.push_back(6);
     // 末尾の要素を削除する
     vec.pop_back();
+
+    // 昇順にソート
+    sort(vec.begin(), vec.end());
+    // 降順にソート
+    sort(vec.begin(), vec.end(), greater<>());
 
     return 0;
 }

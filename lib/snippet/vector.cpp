@@ -15,6 +15,9 @@ int main() {
 
     int vec_size = vec.size();
 
+    // 0を初期値として要素の合計値を取得する
+    int sum = accumulate(vec.begin(), vec.end(), 0);
+
     // 末尾に要素を追加する
     vec.push_back(6);
     // 末尾の要素を削除する

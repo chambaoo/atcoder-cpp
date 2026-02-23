@@ -1,5 +1,5 @@
-#include <map>
-#include <vector>
+#include <bits/stdc++.h>
+#define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
 int main() {
@@ -35,7 +35,18 @@ int main() {
     };
 
     // 後から map に要素を追加する
-    dict.insert(std::make_pair(27, 'A'));
+    // dict.insert(std::make_pair(27, 'A'));
+    map<int, char> mp;
+    mp.insert({29, 'C'});
+    mp.insert({28, 'B'});
+    mp.insert({27, 'A'});
+
+    // map は常にソートされている
+    cout << mp.begin()->first << endl;
+    cout << mp.rbegin()->first << endl;
+
+    // 指定したキーがないとき 0 を返す
+    int zero = dict[29];
 
     for (int v : p) {
         char c = dict.at(v);

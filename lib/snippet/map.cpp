@@ -87,3 +87,40 @@ int main() {
 
     return 0;
 }
+
+int main() {
+
+    string s;
+    cin >> s;
+
+    map<char, int> counts = {
+        {'a', 2},
+        {'e', 3},
+        {'b', 9},
+        {'d', 2},
+        {'c', 9},
+    };
+
+    for (char c : s) {
+        counts[c]++;
+    }
+    // 最大値の値を取得する
+    int max = 0;
+    for (auto& p : counts) {
+        if (p.second > max) {
+            max = p.second;
+        }
+    }
+
+    string ans = "";
+    for (char c : s) {
+        int num = counts[c];
+        if (num != max) {
+            ans += c;
+        }
+    }
+
+    cout << ans << endl;
+
+    return 0;
+}

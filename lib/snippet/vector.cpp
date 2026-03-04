@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     vector<int> vec = {1, 2, 3, 4, 5};
 
-    int first_element = vec[1];
+    int first_element = vec[0];
     int second_element = vec.at(1);
     
     // 非推奨（エラーメッセージが表示されない）

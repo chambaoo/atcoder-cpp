@@ -41,6 +41,8 @@ int main() {
     mp.insert({28, 'B'});
     mp.insert({27, 'A'});
 
+    mp.erase(20);
+
     // map は常にソートされている
     cout << mp.begin()->first << endl;
     cout << mp.rbegin()->first << endl;

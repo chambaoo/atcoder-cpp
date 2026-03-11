@@ -13,6 +13,8 @@ int main()
   s.insert(3);
   s.insert(1);
   s.insert(4);
+  // 複数挿入
+  s.insert({1,2,3,4});
 
   // 検索 : キー(int)を指定し、対応する値を得る
   decltype(s)::iterator it = s.find(1);

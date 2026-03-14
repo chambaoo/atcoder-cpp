@@ -1,9 +1,14 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define rep(i, n) for (int i = 0; i < (n); ++i)
-#define ll long long
+#include <cstdio>
+#include <iostream>
 
 int main() {
+    double d;
+    std::cin >> d;
+    const double pi = 3.141592653589793;
 
+    double radius = (d / 2);
+    double area = pi * radius * radius;
+
+    printf("%f\n", area);
     return 0;
 }

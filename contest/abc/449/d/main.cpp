@@ -5,5 +5,8 @@ using namespace std;
 
 int main() {
 
+    ll l, r, d, u;
+    cin >> l >> r >> d >> u;
+
     return 0;
 }

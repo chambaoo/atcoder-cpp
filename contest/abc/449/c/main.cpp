@@ -5,5 +5,27 @@ using namespace std;
 
 int main() {
 
+    int n, l, r;
+    string s;
+    cin >> n >> l >> r >> s;
+
+    vector<vector<int>> v(26);
+
+    rep (i, n) {
+        int key = s[i] - 'a';
+        v[key].push_back(i);
+    }
+
+    sort(v.begin(), v.end());
+
+    for (auto z : v) {
+        cout << '=' << endl;
+        for (auto y : z) cout << y << endl;
+        cout << '=' << endl;
+    }
+
+    int cnt = 0;
+    cout << cnt << endl;
+
     return 0;
 }

@@ -35,6 +35,14 @@ int main() {
     vector<int> p(5);
     iota(p.begin(), p.end(), 0);
 
+    // v[0] = []
+    // v[1] = []
+    // v[2] = []
+    vector<vector<int>> v(3);
+    v[0].push_back(4);
+    v[0].push_back(9);
+    cout << v[0][1] << endl;  // 9
+
     return 0;
 }
 

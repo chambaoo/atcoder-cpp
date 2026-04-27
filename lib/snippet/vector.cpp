@@ -31,6 +31,11 @@ int main() {
     // 最大値を取得する
     int max = *max_element(vec.begin(), vec.end());
 
+    // 最大値のイテレータを取得
+    auto iterator = std::max_element(vec.begin(), vec.end());
+    // 最大値のインデックスを取得
+    int index = std::distance(vec.begin(), iterator);
+
     // p = {0, 1, 2, 3, 4} を作る
     vector<int> p(5);
     iota(p.begin(), p.end(), 0);

@@ -58,3 +58,6 @@ int main() {
 
     return 0;
 }
+
+// References
+// study/typical90/003 dfs 木の直径

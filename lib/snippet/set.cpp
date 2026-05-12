@@ -16,6 +16,13 @@ int main()
   // 複数挿入
   s.insert({1,2,3,4});
 
+  // 消去
+  s.erase(3);
+  
+  // 1つ目の値を出力する  
+  if (s.size() == 1) cout << *s.begin() << endl;
+  else cout << -1 << endl;
+
   // 検索 : キー(int)を指定し、対応する値を得る
   decltype(s)::iterator it = s.find(1);
   if (it != s.end())
@@ -37,4 +44,5 @@ int main()
 
   // 要素数は 2
   cout << test.size() << endl;
+
 }

@@ -57,3 +57,19 @@ int wrong_1() {
     // 99 ではなく 0 が入っている
     // cout << vec.at(0) << endl;
 }
+
+int find() {
+    std::vector<int> numbers = {10, 20, 30, 40, 50};
+
+    // 30という値を検索
+    auto it = std::find(numbers.begin(), numbers.end(), 30);
+
+    // 見つかったかどうかを確認
+    if (it != numbers.end()) {
+        std::cout << "値が見つかりました: " << *it << std::endl;
+    } else {
+        std::cout << "値は見つかりませんでした。" << std::endl;
+    }
+
+    return 0;
+}

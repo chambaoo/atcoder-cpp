@@ -71,3 +71,11 @@ int main() {
 //     return 0;
 // }
 
+// --------------------------------
+// Reference
+// --------------------------------
+// #二分探索
+// https://atcoder.jp/contests/typical90/tasks/typical90_g
+
+// A_j >= B となる最小の j を求める処理では、
+// std::lower_bound() を使うことが出来る

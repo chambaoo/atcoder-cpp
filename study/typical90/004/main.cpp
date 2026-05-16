@@ -32,3 +32,11 @@ int main() {
 
     return 0;
 }
+
+
+// --------------------------------
+// Reference
+// --------------------------------
+// #包除原理
+// 重複しているところを足したり引いたりすること
+// https://atcoder.jp/contests/typical90/tasks/typical90_d

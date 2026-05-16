@@ -71,3 +71,28 @@ int main() {
 
 //     return 0;
 // }
+
+
+// --------------------------------
+// Reference
+// --------------------------------
+// #部分文字列
+// https://atcoder.jp/contests/abc456/tasks/abc456_c
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//   string s;
+//   cin >> s;
+
+//   long long ans = 0;
+//   int start_i = 0;
+//   for(int i=0; i<s.size(); i++){
+//     if(i+1 == s.size() || s[i] == s[i+1]){
+//       ans += (long long) (i - start_i + 1) * (i - start_i + 2) / 2;
+//       start_i = i + 1;
+//     }
+//   }
+//   cout << ans % 998244353 << endl;
+// }

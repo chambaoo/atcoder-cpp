@@ -36,3 +36,9 @@ int main() {
 
     return 0;
 }
+
+// --------------------------------
+// Reference
+// --------------------------------
+// #グリッド #辺で隣接
+// https://atcoder.jp/contests/abc458/tasks/abc458_b

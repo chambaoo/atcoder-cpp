@@ -31,3 +31,46 @@ int main() {
 
     return 0;
 }
+
+// --------------------------------
+// Reference
+// --------------------------------
+// #中央値 #優先度付きキュー
+// https://atcoder.jp/contests/abc458/tasks/abc458_d
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+// 	ios::sync_with_stdio(false);
+// 	cin.tie(nullptr);
+// 	int x;
+// 	cin >> x;
+// 	priority_queue<int> L;
+// 	priority_queue<int, vector<int>, greater<int>> R;
+// 	L.push(x);
+// 	auto add = [&](int val) {
+// 		if (val <= L.top()) {
+// 			L.push(val);
+// 		} else {
+// 			R.push(val);
+// 		}
+// 		if (L.size() < R.size() + 1) {
+// 			L.push(R.top());
+// 			R.pop();
+// 		}
+// 		if (L.size() > R.size() + 1) {
+// 			R.push(L.top());
+// 			L.pop();
+// 		}
+// 	};
+// 	int Q;
+// 	cin >> Q;
+// 	while (Q--) {
+// 		int a, b;
+// 		cin >> a >> b;
+// 		add(a), add(b);
+// 		cout << L.top() << '\n';
+// 	}
+// 	return 0;
+// }

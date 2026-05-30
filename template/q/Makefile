@@ -10,7 +10,7 @@ run: all
 	docker run --rm -i -v "$(PWD)":/work -w /work atcoder:gcc15 ./main
 
 test: all
-	docker run --rm -it -v "$(PWD)":/work -w /work atcoder:gcc15 oj t -c ./main
+	docker run --rm -it -v "$(PWD)":/work -w /work atcoder:gcc15 oj t -c ./main --ignore-spaces-and-newline
 
 # make nt 3     -> sample_3.in/out
 # make nt 1 4   -> sample_1〜sample_4.in/out

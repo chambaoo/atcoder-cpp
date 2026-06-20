@@ -8,6 +8,7 @@ int main(void) {
     
     int i = 10;
     q.push(i);
+    q.emplace(i, i);
     q.front();
     q.pop();
     q.empty();

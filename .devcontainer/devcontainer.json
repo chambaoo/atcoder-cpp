@@ -2,6 +2,10 @@
   "name": "atcoder-cpp-gcc15",
   "image": "atcoder:gcc15",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteEnv": {
+    "ATCODER_ROOT": "/workspaces/${localWorkspaceFolderBasename}"
+  },
+  "onCreateCommand": "echo 'source ${ATCODER_ROOT}/scripts/atcoder.sh' >> ~/.bashrc",
   "customizations": {
     "vscode": {
       "extensions": [

@@ -30,3 +30,4 @@ int main() {
 // --------------------------------
 // Reference
 // --------------------------------
+// https://atcoder.jp/contests/adt_easy_20260629_2/tasks/abc408_a

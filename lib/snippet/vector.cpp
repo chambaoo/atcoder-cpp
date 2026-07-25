@@ -48,6 +48,16 @@ int main() {
     v[0].push_back(9);
     cout << v[0][1] << endl;  // 9
 
+    // vector は辞書順で比較できる
+    vector<int> small(5);
+    vector<int> large(5);
+    iota(small.begin(), small.end(), 1);
+    iota(large.begin(), large.end(), 2);
+
+    cout << (small > large) << endl;    // 0
+    cout << (small == large) << endl;   // 0
+    cout << (small < large) << endl;    // 1
+
     return 0;
 }
 

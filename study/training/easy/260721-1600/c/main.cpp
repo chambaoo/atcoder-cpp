@@ -32,3 +32,4 @@ int main() {
 // --------------------------------
 // Reference
 // --------------------------------
+// https://atcoder.jp/contests/adt_easy_20260721_1/tasks/abc291_b

@@ -32,6 +32,7 @@ int main() {
 // --------------------------------
 // Reference
 // --------------------------------
+// https://atcoder.jp/contests/adt_easy_20260721_1/tasks/abc419_b
 // 解説では、 #優先度付きキュー を利用して解く方法が紹介されている。
 
 // #include <bits/stdc++.h>
